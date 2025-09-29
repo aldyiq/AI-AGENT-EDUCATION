@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #e9f0fc;
+    margin: 0;
+    color: #222;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto 20px auto;
+    background: white;
+    border-radius: 8px;
+    padding: 24px 32px;
+    box-shadow: 0 2px 10px rgba(50,70,200,0.08);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+form label {
+    display: block;
+    margin: 13px 0 6px 0;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 7px 8px;
+    border: 1px solid #92a2d0;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    margin-top: 14px;
+    width: 100%;
+    background: #4666ea;
+    color: white;
+    font-size: 16px;
+    padding: 9px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #2d47bf;
+}
+
+#error, .error {
+    color: #ab2222;
+    padding: 10px 0 0 2px;
+    font-size: 15px;
+}
+
+#output {
+    margin-top: 18px;
+    font-size: 16px;
+    background: #f6fbff;
+    border-radius: 6px;
+    padding: 10px;
+    border: 1px solid #bdd2f5;
+    min-height: 30px;
+}
+
+canvas#grafikSuhu {
+    margin-top: 18px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 1px 4px rgba(90,120,250,.06);
+}
+
+footer {
+    text-align: center;
+    margin: 27px 0 12px 0;
+    color: #486;
+    font-size: 14px;
+}
