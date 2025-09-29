@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Agent Suhu & Kalor</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Agent Editor Suhu & Kalor</h1>
+        <form id="kalorForm">
+            <label>Massa (kg) <input type="number" id="massa" step="any" min="0" required></label>
+            <label>Kalor Jenis (J/kg°C) <input type="number" id="kalorJenis" step="any" min="0" required></label>
+            <label>Suhu Awal (°C) <input type="number" id="suhuAwal" step="any" required></label>
+            <label>Suhu Akhir (°C) <input type="number" id="suhuAkhir" step="any" required></label>
+            <label>Durasi Pemanasan (detik) <input type="number" id="waktuTotal" value="60" min="1" required></label>
+            <button type="submit">Hitung Kalor & Visualisasikan</button>
+        </form>
+
+        <div id="output"></div>
+        <canvas id="grafikSuhu" width="400" height="200"></canvas>
+        <div id="error" class="error"></div>
+    </div>
+    <footer>
+        <small>© 2024 AI Agent Suhu & Kalor</small>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
